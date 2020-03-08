@@ -1,0 +1,4 @@
+package secretSanta
+
+interface ComponentScanRoot {
+}

@@ -1,0 +1,57 @@
+Dictionary:
+Group
+Admin
+Participant
+
+
+Roles:
+Admin
+Participant
+
+Bounded Context:
+
+Admin
+Group
+  Participant
+SecretSanta Exchage
+  Pairs
+Notifications
+
+
+Event Storming:
+
+
+Admin Onboarded
+
+
+
+
+Group Created (Admin)
+
+Participant added | Participant removed | Participant edited (Admin)
+
+Group pair restrictions added | Group pair restrictions edited (Admin)
+
+Participants Notified about Secret Santa
+
+opt in (Participant) | opt out (Participant)
+
+Admin Notified of Participant opt in/out
+
+
+Group finalized (Admin)
+
+
+Participants edited (Participant)
+
+SecretSanta started (Admin)                           |
+                                                      |  SecretSanta canceled (Admin)
+Pairs selected                                        |  Members notified of cancelation
+                                                      |  Created a wishlist (Participant)
+Members Notified of Match                             |  Requested opt out | Requested opt back in (Participant)
+                                                      |  Admin notified of Request opt out
+Requested Information from Pair (Participant)         |
+Shared information with pair (Participant)            |
+                                                      |
+Send thankyou messages to Pair (Participant)
+SecretSanta finished (Admin)
